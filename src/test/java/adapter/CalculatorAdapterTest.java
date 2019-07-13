@@ -2,7 +2,6 @@ package adapter;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class CalculatorAdapterTest {
     //sut - service/system under test
@@ -45,6 +44,8 @@ public class CalculatorAdapterTest {
         //given
         Double a = 2.0;
         Double b = 0.0;
+        //when
+        //then
             Assertions.assertThatExceptionOfType(ArithmeticException.class).isThrownBy(() -> {sut.divide(a,b);})
                     .withMessageContaining("/ by zero")
                     .withNoCause();
