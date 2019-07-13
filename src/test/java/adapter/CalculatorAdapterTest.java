@@ -7,7 +7,7 @@ public class CalculatorAdapterTest {
     //sut - service/system under test
     private CalculatorAdapter sut = new CalculatorAdapter();
     @Test
-    public void AddTestShouldReturnWhatExpected() {
+    public void addTestShouldReturnWhatExpected() {
         //given
         Double a = 5.5;
         Double b = 4.2;
@@ -18,7 +18,7 @@ public class CalculatorAdapterTest {
     }
 
     @Test
-    public void SubtractTestShouldReturnWhatExpected() {
+    public void subtractTestShouldReturnWhatExpected() {
         //given
         Double a = 5.5;
         Double b = 2.5;
@@ -40,7 +40,7 @@ public class CalculatorAdapterTest {
     }
 
     @Test
-    public void DivideTestShouldThrowException() {
+    public void divideTestShouldThrowException() {
         //given
         Double a = 2.0;
         Double b = 0.0;
